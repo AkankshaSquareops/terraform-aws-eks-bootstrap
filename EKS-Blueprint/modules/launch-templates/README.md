@@ -59,17 +59,17 @@ module "launch_templates" {
         }
       ]
     },
-    gp2 = {
+    gp3 = {
       ami = "ami-0adc757be1e4e11a1"
       ami                          = "ami-0adc757be1e4e11a1"
-      launch_template_prefix       = "gp2"
+      launch_template_prefix       = "gp3"
       launch_template_os           = "amazonlinux2eks"
       vpc_security_group_ids       = "<comma separated security groups ids>"
       iam_instance_profile         = "IAM Instance Profile"
       block_device_mappings        = [
         {
           device_name = "/dev/xvda"
-          volume_type = "gp2"
+          volume_type = "gp3"
           volume_size = 200
         }
       ]
@@ -83,7 +83,7 @@ module "launch_templates" {
       block_device_mappings         = [
         {
           device_name = "/dev/xvda"
-          volume_type = "gp2"
+          volume_type = "gp3"
           volume_size = 200
         }
       ]

@@ -20,7 +20,7 @@ server:
     enabled: true
     mountPath: /data
     size: 20Gi
-    storageClass: gp2
+    storageClass: gp3
 
 alertmanager:
   enabled: false
